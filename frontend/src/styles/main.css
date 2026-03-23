@@ -406,13 +406,20 @@ body {
   gap: 10px;
   grid-column: 2;
   justify-self: center;
+  position: relative;
+  z-index: 2;
 }
 
 .retro-active__name {
+  display: inline-block;
   font-size: 2.75rem;
   line-height: 1.08;
   text-align: center;
   letter-spacing: 0.03em;
+  background: #000000;
+  padding: 0 14px;
+  position: relative;
+  z-index: 2;
 }
 
 .retro-active__role,
@@ -432,6 +439,14 @@ body {
   text-align: center;
 }
 
+.retro-active__role {
+  display: inline-block;
+  background: #000000;
+  padding: 0 10px;
+  position: relative;
+  z-index: 2;
+}
+
 .retro-waiting__name {
   font-size: 0.82rem;
   text-align: center;
@@ -449,9 +464,9 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: inherit;
-  border: inherit;
-  box-shadow: inherit;
+  background: none;
+  border: 0;
+  box-shadow: none;
   opacity: 0;
   pointer-events: none;
 }
